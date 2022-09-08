@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int main()
+/**
+ * function main, prints arbitrary string to the console
+ */
+int main(void)
 {
-  char my_string[] = "\"Programming is like building a multilingial puzzle";
-
+  char my_string[] = "\"Programming is like building a multilingual puzzle";
   puts(my_string);
-
-  return 0;
+  return (0);
 }

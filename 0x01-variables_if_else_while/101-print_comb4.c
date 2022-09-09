@@ -19,7 +19,7 @@ for (number3 = number2 + 1; number3 < 10; number3++)
 {
 putchar(number1 + '0');
 putchar(number2 + '0');
- putchar(number3 + '0');
+putchar(number3 + '0');
 if (number1 != 7 || number2 != 8 || number3 != 9)
 {
 putchar(',');

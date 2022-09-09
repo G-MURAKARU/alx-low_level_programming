@@ -14,7 +14,7 @@ for (hex = 0; hex <= 9; hex++)
 {
 putchar(hex + '0');
 }
-for (c ='a'; c <= 'f'; ++c)
+for (c = 'a'; c <= 'f'; ++c)
 {
 putchar(c);
 }

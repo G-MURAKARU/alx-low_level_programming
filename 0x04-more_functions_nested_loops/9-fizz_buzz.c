@@ -6,7 +6,7 @@
  *
  * Return: null
  */
-void fizz_buzz(void)
+int main(void)
 {
 int counter;
 for (counter = 1; counter <= 100; counter++)
@@ -25,10 +25,9 @@ printf("Fizz ");
 }
 else
 {
-printf(counter);
-printf(" ");
+printf("%d ", counter);
 }
 }
-printf('\n');
-return;
+printf("\n");
+return (0);
 }

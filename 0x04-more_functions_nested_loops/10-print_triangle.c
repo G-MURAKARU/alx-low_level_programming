@@ -8,6 +8,12 @@
  */
 void print_triangle(int size)
 {
+if (n < 1)
+{
+_putchar('\n');
+}
+else
+{
 int height;
 int counter1;
 int counter2;
@@ -22,6 +28,7 @@ for (counter2 = 0; counter2 < (height + 1); counter2++)
 _putchar('#');
 }
 _putchar('\n');
+}
 }
 return;
 }

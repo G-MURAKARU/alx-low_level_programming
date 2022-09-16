@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * fizz_buzz - Fizz Buzz

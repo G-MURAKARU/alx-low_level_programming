@@ -16,11 +16,11 @@ checker++;
 }
 if (checker % 2 != 0)
 {
-counter = (checker - 1) / 2;
+counter = ((checker - 1) / 2) + 1;
 }
 else
 {
-counter = checker / 2;
+counter = (checker / 2) + 1;
 }
 while (counter < checker)
 {

@@ -12,7 +12,7 @@ int checker = 0;
 while (*(str + checker) != '\0')
 {
 _putchar(*(str + checker));
- checker++;
+checker++;
 }
 _putchar('\n');
 return;

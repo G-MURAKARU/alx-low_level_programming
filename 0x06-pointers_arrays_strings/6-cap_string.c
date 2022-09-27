@@ -10,7 +10,8 @@ char *cap_string(char *str)
 {
 int checker = 0;
 int counter;
-char my_array[13] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
+char my_array[13] = {
+',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
 while (*(str + checker) != '\0')
 {
 for (counter = 0; counter < 13; counter++)

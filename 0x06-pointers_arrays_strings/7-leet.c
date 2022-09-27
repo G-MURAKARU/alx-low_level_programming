@@ -16,7 +16,8 @@ while (*(str + checker) != '\0')
 {
 for (counter = 0; counter < 5; counter++)
 {
-if ((*(str + checker) == char_array[counter]) || (*(str + checker) == char_array[counter] - 32))
+if ((*(str + checker) == char_array[counter]) ||
+(*(str + checker) == char_array[counter] - 32))
 {
 *(str + checker) = int_array[counter];
 break;

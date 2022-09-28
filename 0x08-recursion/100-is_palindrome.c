@@ -44,7 +44,7 @@ return (counter((s + 1), ++count));
 }
 
 /**
- * is_palindome - checks if a string is a palindrome
+ * is_palindrome - checks if a string is a palindrome
  * @s: string to test
  *
  * Return: 1 if true, 0 if false

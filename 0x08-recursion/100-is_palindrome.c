@@ -11,20 +11,20 @@
  */
 int check_palindrome(char *s, int start_index, int end_index)
 {
-  if (end_index <= start_index)
-    {
-      return (1);
-    }
-  if (*(s + start_index) == *(s + end_index))
-    {
-      start_index++;
-      end_index--;
-      return (check_palindrome(s, start_index, end_index));
-    }
-  else
-    {
-      return (0);
-    }
+if (end_index <= start_index)
+{
+return (1);
+}
+if (*(s + start_index) == *(s + end_index))
+{
+start_index++;
+end_index--;
+return (check_palindrome(s, start_index, end_index));
+}
+else
+{
+return (0);
+}
 }
 
 /**
@@ -36,11 +36,11 @@ int check_palindrome(char *s, int start_index, int end_index)
  */
 int counter(char *s, int count)
 {
-  if (!*s)
-    {
-      return (count);
-    }
-  return (counter((s + 1), ++count));
+if (!*s)
+{
+return (count);
+}
+return (counter((s + 1), ++count));
 }
 
 /**
@@ -51,8 +51,8 @@ int counter(char *s, int count)
  */
 int is_palindrome(char *s)
 {
-  int count = 0;
-  int checker = counter(s, count);
-  int start = 0;
-  return (check_palindrome(s, start, checker - 1));
+int count = 0;
+int checker = counter(s, count);
+int start = 0;
+return (check_palindrome(s, start, checker - 1));
 }

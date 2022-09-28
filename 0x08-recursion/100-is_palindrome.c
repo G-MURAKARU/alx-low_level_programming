@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * check_palindrome - checks palindrome-ness
@@ -27,6 +28,22 @@ int check_palindrome(char *s, int start_index, int end_index)
 }
 
 /**
+ * counter - recursive counter
+ * @s: input string
+ * @count: counter's current count
+ *
+ * Return: total count
+ */
+int counter(char *s, int count)
+{
+  if (!*s)
+    {
+      return (count);
+    }
+  return (counter((s + 1), ++count));
+}
+
+/**
  * is_palindome - checks if a string is a palindrome
  * @s: string to test
  *
@@ -34,15 +51,8 @@ int check_palindrome(char *s, int start_index, int end_index)
  */
 int is_palindrome(char *s)
 {
-  int checker = 0;
+  int count = 0;
+  int checker = counter(s, count);
   int start = 0;
-  if (*s)
-    {
-      checker = 1 + is_palindrome(s + 1);
-    }
-  else
-    {
-      return (0);
-    }
   return (check_palindrome(s, start, checker - 1));
 }

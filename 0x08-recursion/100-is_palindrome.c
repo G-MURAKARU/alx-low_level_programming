@@ -36,9 +36,13 @@ int is_palindrome(char *s)
 {
   int checker = 0;
   int start = 0;
-  while (*(s + checker) != '\0')
+  if (*s)
     {
-      checker++;
+      checker = 1 + is_palindrome(s + 1);
+    }
+  else
+    {
+      return (0);
     }
   return (check_palindrome(s, start, checker - 1));
 }

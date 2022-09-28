@@ -13,7 +13,7 @@ if (m % x == 0)
 {
 return (0);
 }
-if (x >= m/2)
+if (x >= m / 2)
 {
 return (1);
 }

@@ -18,7 +18,7 @@ counter++;
 }
 return (start);
 }
- 
+
 /**
  * str_concat - concatenates two strings
  * @s1: pointer to first string
@@ -32,17 +32,24 @@ int required_memory = 0;
 char *char_pointer;
 int count = 0;
 int helper_count;
+if (s1 == NULL || s2 == NULL)
+{
+return (NULL);
+}
 required_memory = string_length(s1, required_memory);
 required_memory = string_length(s2, required_memory);
 char_pointer = malloc(sizeof(char) * required_memory);
-
-while ((count < required_memory) && *(s1 + count))
+if (char_pointer == NULL)
+{
+return (NULL);
+}
+while ((count < required_memory) &&*(s1 + count))
 {
 char_pointer[count] = *(s1 + count);
 count++;
 }
 helper_count = count;
-while	((count < required_memory) && *(s2 + (count - helper_count)))
+while	((count < required_memory) &&*(s2 + (count - helper_count)))
 {
 char_pointer[count] = *(s2 + (count - helper_count));
 count++;

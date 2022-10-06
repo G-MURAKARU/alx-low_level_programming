@@ -32,9 +32,13 @@ int required_memory = 0;
 char *char_pointer;
 int count = 0;
 int helper_count;
-if (s1 == NULL || s2 == NULL)
+if (s1 == NULL)
 {
-return (NULL);
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
 }
 required_memory = string_length(s1, required_memory);
 required_memory = string_length(s2, required_memory);

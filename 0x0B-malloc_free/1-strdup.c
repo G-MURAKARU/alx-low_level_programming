@@ -20,7 +20,7 @@ while (*(str + string_length) != '\0')
 {
 string_length++;
 }
-char_pointer = malloc(sizeof(char) * string_length);
+char_pointer = malloc(sizeof(char) * (string_length + 1));
 if (char_pointer == NULL)
 {
 return (NULL);

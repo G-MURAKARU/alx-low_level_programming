@@ -9,13 +9,13 @@
  */
 char *_strdup(char *str)
 {
-if (*str == NULL)
-{
-*str = "";
-}
 char *char_pointer;
 int counter;
 int string_length = 0;
+if (str == NULL)
+{
+str = "";
+}
 while (*(str + string_length) != '\0')
 {
 string_length++;

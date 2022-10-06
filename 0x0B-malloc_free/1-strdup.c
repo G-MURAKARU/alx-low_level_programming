@@ -2,13 +2,17 @@
 #include "main.h"
 
 /**
- * _strdup - copies a strint ot a new memory location
+ * _strdup - copies a string to a new memory location
  * @str: input string to copy
  *
  * Return: pointer to allocated memory
  */
 char *_strdup(char *str)
 {
+if (*str == NULL)
+{
+*str = "";
+}
 char *char_pointer;
 int counter;
 int string_length = 0;

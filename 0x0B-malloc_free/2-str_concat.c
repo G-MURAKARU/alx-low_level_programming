@@ -42,7 +42,7 @@ s2 = "";
 }
 required_memory = string_length(s1, required_memory);
 required_memory = string_length(s2, required_memory);
-char_pointer = malloc(sizeof(char) * required_memory);
+char_pointer = malloc(sizeof(char) * (required_memory + 1));
 if (char_pointer == NULL)
 {
 return (NULL);

@@ -15,6 +15,14 @@ unsigned int string_length = 0;
 unsigned int s1_length;
 char *char_pointer;
 
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
+}
 while (*(s1 + string_length) != '\0')
 {
 string_length++;

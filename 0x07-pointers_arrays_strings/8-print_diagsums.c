@@ -18,7 +18,8 @@ for (counter = 0; counter < (size * size); counter += (size + 1))
 sum1 += a[counter];
 }
 printf("%d, ", sum1);
-for (counter = (size - 1); counter < ((size * size) - 1); counter += (size - 1))
+for (counter = (size - 1); counter < ((size * size) - 1);
+counter += (size - 1))
 {
 sum2 += a[counter];
 }

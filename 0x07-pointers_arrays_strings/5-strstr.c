@@ -17,9 +17,9 @@ if (haystack == NULL || needle == NULL)
 {
 return (NULL);
 }
-while (*(haystack + haystack_counter) != '\0')
+while (*(haystack + haystack_counter))
 {
-while (*(needle + needle_counter) != '\0')
+while (*(needle + needle_counter))
 {
 if (*(haystack + haystack_counter) == *(needle + needle_counter))
 {
@@ -37,7 +37,7 @@ needle_counter = 0;
 break;
 }
 }
-if (*(needle + needle_counter) == '\0')
+if (!*(needle + needle_counter))
 {
 return (start_pointer);
 }

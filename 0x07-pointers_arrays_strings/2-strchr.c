@@ -10,6 +10,10 @@
  */
 char *_strchr(char *s, char c)
 {
+if (s == NULL || s == "" || c = NULL || c == "")
+{
+return (NULL);
+}
 while (*s)
 {
 if (*s == c)

@@ -13,6 +13,10 @@ char *_strstr(char *haystack, char *needle)
 unsigned int haystack_counter = 0;
 unsigned int needle_counter = 0;
 char *start_pointer = NULL;
+if (haystack == NULL || needle == NULL)
+{
+return (NULL);
+}
 while (*(haystack + haystack_counter) != '\0')
 {
 while (*(needle + needle_counter) != '\0')

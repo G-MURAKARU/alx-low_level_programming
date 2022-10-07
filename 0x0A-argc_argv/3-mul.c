@@ -8,15 +8,15 @@
  *
  * Return: 0 if successful, 1 if errors
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-  int product;
-  if (argc != 3)
-    {
-      printf("Error\n");
-      return (1);
-    }
-  product = atoi(argv[1]) * atoi(argv[2]);
-  printf("%d\n", product);
-  return (0);
+int product;
+if (argc != 3)
+{
+printf("Error\n");
+return (1);
+}
+product = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", product);
+return (0);
 }

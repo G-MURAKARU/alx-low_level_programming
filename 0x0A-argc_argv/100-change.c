@@ -52,7 +52,7 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-if ((atoi(argv[1])) == 0 && (argv[1] != 0))
+if ((atoi(argv[1])) == 0 && (*argv[1] != '0'))
 {
 printf("Error\n");
 return (1);

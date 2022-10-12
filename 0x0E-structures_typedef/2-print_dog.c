@@ -27,7 +27,7 @@ printf("Age: %.6f\n", (*d).age);
 }
 else
 {
-printf("Age: (nil)\n");  
+  printf("Age: (nil)\n");
 }
 if ((*d).owner)
 {

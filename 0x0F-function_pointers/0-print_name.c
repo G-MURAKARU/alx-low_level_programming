@@ -13,7 +13,7 @@ if (f == NULL)
 {
 return;
 }
-if (name ==NULL)
+if (name == NULL)
 {
 name = "";
 }

@@ -13,16 +13,27 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *pointer;
 	int str_counter = 0;
 
-	new_node_pointer->str = strdup(str);
-	while (*(str + str_counter))
-		str_counter++;
-        new_node_pointer->len = str_counter;
-        new_node_pointer->next = NULL;
+	if (!new_node_pointer)
+		return (NULL);
+
+	if (str)
+	{
+		new_node_pointer->str = strdup(str);
+		while (*(str + str_counter))
+			str_counter++;
+		new_node_pointer->len = str_counter;
+	}
+	else
+	{
+		new_node_pointer->str = "(nil)";
+		new_node_pointer->len = 0;
+	}
+	new_node_pointer->next = NULL;
 
 	if (!*head)
 		*head = new_node_pointer;
 	else
-	{	
+	{
 		pointer = *head;
 		while (pointer->next)
 			pointer = pointer->next;

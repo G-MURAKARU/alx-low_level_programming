@@ -9,6 +9,7 @@
 void free_list(list_t *head)
 {
 	list_t *temp;
+
 	if (!head)
 		return;
 	while (1)
@@ -20,6 +21,5 @@ void free_list(list_t *head)
 		if (!head)
 			break;
 	}
-	return;
 }
 

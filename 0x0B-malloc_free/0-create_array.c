@@ -19,7 +19,8 @@ return (NULL);
 }
 for (counter = 0; counter < size; counter++)
 {
-char_pointer[counter] = c;
+/* char_pointer[counter] = c; */
+*(char_pointer + counter) = c;
 }
 return (char_pointer);
 }

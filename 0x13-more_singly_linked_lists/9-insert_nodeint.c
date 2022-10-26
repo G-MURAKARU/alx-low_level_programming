@@ -15,10 +15,10 @@ listint_t *insert_nodeint_at_index(
 	listint_t *my_pointer;
 	listint_t *my_other_pointer;
 	listint_t *new_node;
-	
+
 	if (!head)
-                return (NULL);
-	
+		return (NULL);
+
 	new_node = malloc(sizeof(listint_t));
 
 	if (!new_node)

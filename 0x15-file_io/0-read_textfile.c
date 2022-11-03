@@ -26,8 +26,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	read_letter_count = read(fildes, char_buffer, letters);
+	if (read_letter_count == -1)
+		return (0);
 
 	write_letter_count = write(1, char_buffer, read_letter_count);
+	if (write_letter_count == -1)
+		return (0);
 
 	close(fildes);
 	free(char_buffer);

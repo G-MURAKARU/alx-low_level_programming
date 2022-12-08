@@ -30,7 +30,7 @@ dlistint_t *insert_dnodeint_at_index(
 	if (idx == 0)
 	{
 		new_node->next = *head;
-		(*head)->prev = new_node
+		(*head)->prev = new_node;
 		*head = new_node;
 		return (*head);
 	}

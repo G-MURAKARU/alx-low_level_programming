@@ -36,7 +36,7 @@ dlistint_t *insert_dnodeint_at_index(
 	my_pointer = *head;
 	while (counter < idx)
 	{
-		if (!(my_pointer)->next)
+		if (!my_pointer)
 			return (NULL);
 		my_other_pointer = my_pointer;
 		my_pointer = my_pointer->next;
